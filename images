@@ -1,0 +1,9 @@
+<script>start("/Users/akira/Desktop/練習/cafe website　練習/images/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("gazou1.jpg","gazou1.jpg",0,3975559,"3.8 MB",1779789712,"2026/05/26 18:01:52");</script>
+<script>addRow("menu1.jpg","menu1.jpg",0,2609442,"2.5 MB",1779874697,"2026/05/27 17:38:17");</script>
+<script>addRow("menu2.jpg","menu2.jpg",0,4284602,"4.1 MB",1779874707,"2026/05/27 17:38:27");</script>
+<script>addRow("menu3.jpg","menu3.jpg",0,337879,"330 kB",1779874714,"2026/05/27 17:38:34");</script>
+<script>addRow("photo1.jpg","photo1.jpg",0,3498308,"3.3 MB",1779790543,"2026/05/26 18:15:43");</script>
+<script>addRow("photo2.jpg","photo2.jpg",0,3872450,"3.7 MB",1779790107,"2026/05/26 18:08:27");</script>
+<script>addRow("photo3.jpg","photo3.jpg",0,1959026,"1.9 MB",1779790114,"2026/05/26 18:08:34");</script>
