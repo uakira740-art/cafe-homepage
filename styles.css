@@ -384,3 +384,63 @@ footer {
     height: 350px;
   }
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+/* --- スマホ用（画面幅768px以下）の設定 --- */
+@media screen and (max-width: 768px) {
+    /* ハンバーガーボタンを表示 */
+    .hamburger {
+        display: flex;
+    }
+
+    /* 通常時はナビメニューを非表示にする */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-bottom: 1px solid #eee;
+        padding: 30px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    /* JavaScriptで「active」クラスが付いたときにメニューを表示する */
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* ボタン周りの微調整 */
+    header {
+        padding: 15px 20px;
+    }
+    
+    .net-shop-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
