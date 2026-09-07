@@ -281,12 +281,12 @@ section {
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #333;
-    color: white;
-    border: none;
+    border: 1px solid #ccc; /* 枠線をうすいグレーにする場合 */
+    background-color: #fff;
+    color: #333; /* 文字色を黒っぽくする */
+    border-radius: 4px;
     font-size: 16px;
-    cursor: pointer;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 footer {
@@ -311,4 +311,71 @@ footer {
 .footer-copy {
     font-size: 12px;
     color: #333;
+}
+
+/* =================================ロマ・スマホ対応（レスポンシブ） ================= */
+@media screen and (max-width: 768px) {
+  
+  /* ヘッダーの縦並び化 */
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ヒーローセクション（ファーストビュー）の文字調整 */
+  .hero h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* 各セクションの余白をスマホ用に狭くする */
+  .about,
+  .menu,
+  .photo,
+  .access,
+  .contact {
+    padding: 60px 20px;
+  }
+
+  /* 見出しの文字サイズを調整 */
+  .about h2,
+  .menu h2,
+  .photo h2,
+  .access h2,
+  .contact h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  /* メニューのグリッドを3列から1列（または2列）に変更 */
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* フォトのグリッドを3列から1列に変更 */
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .photo-item {
+    height: 250px;
+  }
+
+  /* マップの高さ調整 */
+  .access-map iframe {
+    height: 350px;
+  }
 }
