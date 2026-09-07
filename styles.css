@@ -12,11 +12,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    background-color: white;
+    padding: 15px 30px;
+    /* 背景を少しだけ透明にする（白の85%の不透明度） */
+    background-color: rgba(255, 255, 255, 0.85);
+    /* すりガラスのようなぼかし効果 */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid #eee;
     position: sticky;
-    top:0;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
