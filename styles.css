@@ -12,7 +12,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 50px; /* ←ここを「15px 30px」から「15px 50px」に変更 */
+    padding: 15px 50px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -21,28 +21,37 @@ header {
     top: 0;
     z-index: 100;
 }
+
 .logo {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-nav ul {
+/* PC用のナビメニューの基本スタイル */
+.nav-menu ul {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-nav ul li a {
+.nav-menu ul li a {
     text-decoration: none;
     color: #333;
     font-size: 14px;
 }
 
+/* ヘッダー右側（ボタンとハンバーガーのまとめ） */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .net-shop-btn {
     background-color: #f5c400;
     color: #333;
-    padding: 20px 30px;
+    padding: 12px 24px;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -318,7 +327,7 @@ footer {
 
 /* ================================= スマホ対応（レスポンシブ） ================= */
 
-/* PC・共通時のハンバーガー設定（基本は非表示） */
+/* PC・共通時のハンバーガー設定（PCでは非表示） */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -336,13 +345,6 @@ footer {
     transition: 0.3s;
 }
 
-/* ヘッダー右側のまとめ（PC・スマホ共通） */
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 /* --- スマホ用（画面幅768px以下）の設定 --- */
 @media screen and (max-width: 768px) {
 
@@ -354,23 +356,11 @@ footer {
         font-size: 18px;
     }
 
-    /* ハンバーガーボタンを表示 */
+    /* ハンバーガーボタンを表示し、PC用の横並びメニューを隠す */
     .hamburger {
         display: flex;
     }
 
-    /* スマホ用のNET SHOPボタンサイズ調整 */
-    .net-shop-btn {
-        padding: 8px 14px;
-        font-size: 12px;
-    }
-
-    /* ヘッダー右側の間隔をスマホ用に調整 */
-    .header-right {
-        gap: 12px;
-    }
-
-    /* 通常時はナビメニューを非表示（絶対配置で下に出す） */
     .nav-menu {
         display: none;
         position: absolute;
@@ -394,6 +384,17 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+    /* スマホ用のNET SHOPボタンサイズ調整 */
+    .net-shop-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    /* ヘッダー右側の間隔をスマホ用に調整 */
+    .header-right {
+        gap: 12px;
     }
 
     /* ヒーローセクション等の文字調整 */
