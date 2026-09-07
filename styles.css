@@ -342,92 +342,92 @@ footer {
 @media screen and (max-width: 768px) {
   
     /* ヘッダーを横並びのままコンパクトにする */
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px 20px;
-    }
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
 
     /* ロゴの調整 */
-    .logo {
-        font-size: 18px;
-    }
+.logo {
+    font-size: 18px;
+}
 
     /* ハンバーガーボタンを表示 */
-    .hamburger {
-        display: flex;
-    }
+.hamburger {
+     display: flex;
+}
 
     /* 通常時はナビメニューを非表示にする */
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border-bottom: 1px solid #eee;
-        padding: 30px 0;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    }
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid #eee;
+    padding: 30px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
 
     /* JavaScriptで「active」が付いたときにメニューを表示 */
-    .nav-menu.active {
-        display: block;
-    }
+.nav-menu.active {
+    display: block;
+}
 
-    .nav-menu ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+.nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 
     /* ネットショップボタンの調整 */
-    .net-shop-btn {
-        padding: 8px 15px;
-        font-size: 12px;
-    }
+.net-shop-btn {
+    padding: 8px 15px;
+    font-size: 12px;
+}
 
     /* ヒーローセクション等の文字調整 */
-    .hero h1 {
-        font-size: 36px;
-        letter-spacing: 2px;
-    }
+.hero h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
 
-    .hero p {
-        font-size: 16px;
-    }
+.hero p {
+    font-size: 16px;
+}
 
-    .about,
-    .menu,
-    .photo,
-    .access,
-    .contact {
-        padding: 60px 20px;
-    }
+.about,
+.menu,
+.photo,
+.access,
+.contact {
+    padding: 60px 20px;
+}
 
-    .about h2,
-    .menu h2,
-    .photo h2,
-    .access h2,
-    .contact h2 {
-        font-size: 28px;
-        letter-spacing: 2px;
-    }
+.about h2,
+.menu h2,
+.photo h2,
+.access h2,
+.contact h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
 
-    .menu-grid,
-    .photo-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+.menu-grid,
+.photo-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 
-    .photo-item {
-        height: 250px;
-    }
+.photo-item {
+     height: 250px;
+}
 
-    .access-map iframe {
-        height: 350px;
-    }
+.access-map iframe {
+    height: 350px;
+  }
 }
