@@ -20,6 +20,12 @@
             </ul>
         </nav>
         <a href="#" class="net-shop-btn">NET SHOP</a>
+        
+        <div class="hamburger">
+        　　<span></span>
+        　　<span></span>
+        　　<span></span>
+    　　</div>
     </header>
 
     <section class="hero">
@@ -131,5 +137,14 @@
         </div>
         <p class="footer-copy">Copyright © AKIRA CAFE All Rights Reserved.</p>
     </footer>
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
