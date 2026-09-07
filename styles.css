@@ -12,7 +12,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 15px 50px; /* ←ここを「15px 30px」から「15px 50px」に変更 */
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -21,7 +21,6 @@ header {
     top: 0;
     z-index: 100;
 }
-
 .logo {
     font-size: 20px;
     font-weight: bold;
@@ -337,15 +336,22 @@ footer {
     transition: 0.3s;
 }
 
+/* ヘッダー右側のまとめ（PC・スマホ共通） */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 /* --- スマホ用（画面幅768px以下）の設定 --- */
 @media screen and (max-width: 768px) {
 
     header {
-        padding: 10px 15px;
+        padding: 15px 20px;
     }
 
     .logo {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /* ハンバーガーボタンを表示 */
@@ -355,8 +361,13 @@ footer {
 
     /* スマホ用のNET SHOPボタンサイズ調整 */
     .net-shop-btn {
-        padding: 8px 12px;
-        font-size: 11px;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    /* ヘッダー右側の間隔をスマホ用に調整 */
+    .header-right {
+        gap: 12px;
     }
 
     /* 通常時はナビメニューを非表示（絶対配置で下に出す） */
